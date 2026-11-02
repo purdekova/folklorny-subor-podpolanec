@@ -3,33 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#07172E">
+  <meta name="description" content="Portfólio Viktórie Purdekovej, študentky Elektronického obchodu a manažmentu.">
+  <title>Viktória Purdeková — portfólio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <a class="wordmark" href="#domov" aria-label="Viktória Purdeková — domov">
+      <span class="wordmark-mark" aria-hidden="true">VP</span>
+      <span>Viktória Purdeková</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Hlavná navigácia">
+      <a href="#domov">Domov</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#o-mne">O mne</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <main>
+    <section class="hero" id="domov" aria-labelledby="hero-title">
+      <div class="hero-decoration" aria-hidden="true">
+        <span class="hero-line"></span>
+        <span class="hero-circle"></span>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Študentka · Digitálny dizajn</p>
+        <h1 id="hero-title">Viktória<br><em>Purdeková</em></h1>
+        <p class="hero-intro">Som študentka Elektronického obchodu a manažmentu. Zaujímam sa o tvorbu webových stránok, digitálny dizajn a moderné technológie.</p>
+        <a class="button button-light" href="#projekty">
+          Pozrieť projekty
+          <span aria-hidden="true">↘</span>
+        </a>
+      </div>
+      <div class="hero-note" aria-hidden="true">
+        <span class="hero-note-line"></span>
+        <span>Portfólio<br>študentských projektov</span>
+      </div>
+    </section>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <section class="projects section-pad" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark">Výber mojej práce</p>
+        <h2 id="projects-title">Projekty</h2>
+        <p class="section-intro">Návrhy a zadania, pri ktorých skúmam, ako môže digitálny priestor slúžiť ľuďom aj značkám.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art project-art-folklore" aria-hidden="true">
+            <span class="art-caption">01 / Návrh webu</span>
+            <span class="art-initial">P</span>
+            <span class="art-rule"></span>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Študentský projekt</p>
+            <h3>Folklórny súbor Podpoľanec</h3>
+            <p>Návrh webovej stránky, tvorba persón, informačnej architektúry a digitálneho prototypu.</p>
+            <span class="project-detail">Webový dizajn <span aria-hidden="true">·</span> UX/UI</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art project-art-elegance" aria-hidden="true">
+            <span class="art-caption">02 / Návrh webu</span>
+            <span class="art-initial">E</span>
+            <span class="art-rule"></span>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Študentský projekt</p>
+            <h3>Elegance Nails</h3>
+            <p>Návrh webovej stránky pre nechtové štúdio so zameraním na služby a online rezervácie.</p>
+            <span class="project-detail">Webový dizajn <span aria-hidden="true">·</span> Koncept</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art project-art-prototype" aria-hidden="true">
+            <span class="art-caption">03 / Proces</span>
+            <span class="art-initial">UX</span>
+            <span class="art-rule"></span>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Študentský projekt</p>
+            <h3>UX/UI návrhy a prototypovanie</h3>
+            <p>Práca s nástrojmi Coggle, Axure a MagicPath pri návrhu webových stránok.</p>
+            <span class="project-detail">UX/UI <span aria-hidden="true">·</span> Prototypovanie</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <section class="about section-pad" id="o-mne" aria-labelledby="about-title">
+      <div class="about-image" role="img" aria-label="Miesto na fotografiu Viktórie Purdekovej">
+        <div class="photo-placeholder">
+          <span class="photo-placeholder-mark" aria-hidden="true">VP</span>
+          <span>Miesto na moju fotografiu</span>
+        </div>
+        <span class="image-index" aria-hidden="true">O mne / Viktória</span>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow eyebrow-dark">Niekoľko slov o mne</p>
+        <h2 id="about-title">Zvedavosť<br><em>pretavená do dizajnu.</em></h2>
+        <p>Študujem Elektronický obchod a manažment a rada objavujem, ako môžu technológie zjednodušiť každodenné veci. Blízky je mi webový dizajn, UX/UI a tvorba webových stránok.</p>
+        <p>Pri práci ma baví prepájať nápady s premyslenou štruktúrou a učiť sa nové digitálne nástroje.</p>
+        <a class="text-link" href="#kontakt">Ozvite sa mi <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-heading">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Začnime<br><em>rozhovor.</em></h2>
+      </div>
+      <div class="contact-details">
+        <p>Máte otázku alebo sa chcete porozprávať o mojich projektoch? Budem rada, keď sa mi ozvete.</p>
+        <div class="contact-item">
+          <span class="contact-label">E-mail</span>
+          <span class="contact-placeholder">Doplniť e-mailovú adresu</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Sociálne siete</span>
+          <span class="contact-placeholder">Doplniť odkazy na profily</span>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <a class="footer-name" href="#domov">Viktória Purdeková</a>
+    <p>Študentské portfólio <span aria-hidden="true">·</span> <span id="current-year"></span></p>
+    <a class="back-to-top" href="#domov">Späť na začiatok <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
