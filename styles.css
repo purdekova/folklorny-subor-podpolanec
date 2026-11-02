@@ -299,6 +299,19 @@ button:focus-visible {
   font-size: clamp(3rem, 5vw, 4.5rem);
 }
 
+.heading-icon {
+  display: inline-block;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-right: 0.45rem;
+  color: var(--gold);
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: 0.08em;
+}
+
 .section-intro {
   max-width: 24rem;
   margin: 0 0 0.35rem;
@@ -425,8 +438,7 @@ button:focus-visible {
   padding: 1.35rem 0 0.3rem;
 }
 
-.project-type,
-.contact-label {
+.project-type {
   color: #94764f;
   font-size: 0.68rem;
   font-weight: 500;
@@ -620,17 +632,6 @@ button:focus-visible {
   border-top: 1px solid rgba(185, 149, 103, 0.42);
 }
 
-.contact-label {
-  flex: 0 0 auto;
-  color: var(--gold);
-}
-
-.contact-placeholder {
-  color: rgba(255, 255, 255, 0.76);
-  font-size: 0.8rem;
-  text-align: right;
-}
-
 .site-footer {
   display: flex;
   min-height: 5.5rem;
@@ -658,6 +659,26 @@ button:focus-visible {
   color: var(--gold);
 }
 
+.footer-contact {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.footer-contact h2 {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.footer-contact p {
+  max-width: 18rem;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.55;
+}
+
 .back-to-top {
   display: inline-flex;
   align-items: center;
@@ -669,6 +690,14 @@ button:focus-visible {
 }
 
 @media (max-width: 900px) {
+  .site-footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact {
+    flex: 1 1 16rem;
+  }
+
   .site-header {
     padding-right: 6%;
     padding-left: 6%;
